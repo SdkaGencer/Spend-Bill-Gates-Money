@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div>
-      <img className='bill' src="../public/images/billgates.jpg" alt="billgates" />
+      
       <h1>Spend Bill Gates' Money</h1>
       <h2 className='balance'>Current Balance: ${balance.toLocaleString()}</h2> {/* sayılar arasınsa virgül */}
 
@@ -49,6 +49,7 @@ function App() {
             <p>Price: ${product.price.toLocaleString()}</p>
             <p>Quantity: {quantities[product.id] || 0}</p> {/* Ürün miktarını göster */}
             <button onClick={() => handleBuy(product)} disabled={balance < product.price}> Buy</button>
+
             <button onClick={() => handleSell(product)} disabled={!quantities[product.id]}>Sell</button>
           </div>
         ))}
