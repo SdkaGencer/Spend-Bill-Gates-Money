@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import products from '../public/data.json'; // JSON dosyamızı içeri aktarıyoruz
+import products from './data.json'; // JSON dosyamızı içeri aktarıyoruz
 
 function App() {
   const [balance, setBalance] = useState(100000000000);
@@ -37,6 +37,7 @@ function App() {
 
   return (
     <div>
+      <img src="/images/billgates.jpg" alt="" />
       <h1>Spend Bill Gates' Money</h1>
       <h2 className='balance'>Current Balance: ${balance.toLocaleString()}</h2> {/* sayılar arasınsa virgül */}
 
