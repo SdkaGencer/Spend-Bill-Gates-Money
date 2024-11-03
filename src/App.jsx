@@ -37,7 +37,6 @@ function App() {
 
   return (
     <div>
-      
       <h1>Spend Bill Gates' Money</h1>
       <h2 className='balance'>Current Balance: ${balance.toLocaleString()}</h2> {/* sayılar arasınsa virgül */}
 
